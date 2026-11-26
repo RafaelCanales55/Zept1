@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/img/logo.png">
+
+    <link rel="stylesheet" href="./public/css/Pi.css">
+
+    <title>Zepeta</title>
+</head>
+
+<body>
+
+    <div id="navbar-container"></div>
+
+    <h1 class="Inicio">Zepeta</h1>
+
+    <!-- CARRUSEL -->
+
+    <div class="slider">
+
+        <ul class="slider-lista">
+
+            <li class="slide activo">
+                <img src="./public/img/CurIng.jpeg" alt="Curso de inglés">
+            </li>
+
+            <li class="slide">
+                <img src="./public/img/SaldMen.jpeg" alt="Salud mental">
+            </li>
+
+            <li class="slide">
+                <img src="./public/img/5Afore.jpeg" alt="Información AFORE">
+            </li>
+
+        </ul>
+
+        <!-- BOTÓN ANTERIOR -->
+
+        <button class="slider-btn anterior" id="anterior" aria-label="Imagen anterior">
+            &#10094;
+        </button>
+
+        <!-- BOTÓN SIGUIENTE -->
+
+        <button class="slider-btn siguiente" id="siguiente" aria-label="Imagen siguiente">
+            &#10095;
+        </button>
+
+        <!-- INDICADORES -->
+
+        <div class="indicadores" id="indicadores"></div>
+
+    </div>
+
+    <div class="SitI">
+        <h1>Sitios de Interés</h1>
+
+        <div class="SitI-but">
+            <a href="#" class="card">
+                <div class="icono-circulo">
+                    <img src="./public/img/logo.png">
+                </div>
+                <h3>ZEPETA</h3>
+            </a>
+            <a href="https://tlahuac.tecnm.mx/" class="card">
+                <div class="icono-circulo">
+                    <img src="./public/img/LogTe.jpg">
+                </div>
+                <h3>TecNM</h3>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="./public/js/Menu.js"></script>
+    <script src="./public/js/slider.js"></script>
+
+</body>
+
+</html>

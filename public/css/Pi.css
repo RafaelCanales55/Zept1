@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    padding-top: 60px;
+}
+
+.Inicio {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-navegacion {
+    width: 100%;
+    min-height: 65px;
+
+    background-color: rgb(175, 145, 88);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+
+    position: fixed;
+    top: 60px;
+    left: 0;
+
+    z-index: 1999;
+}
+
+/* BARRA GOBIERNO DE MÉXICO */
+.barra-gob {
+    width: 100%;
+    height: 60px;
+
+    background-color: #611232;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 2000;
+}
+
+/* LOGOTIPO */
+
+.logo-gob {
+    display: flex;
+    align-items: center;
+}
+
+.logo-gob img {
+    width: 8rem;
+    height: 29px;
+    object-fit: contain;
+}
+
+/* LISTA DE ENLACES */
+
+.enlaces-gob {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 45px;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+/* ENLACES */
+
+.enlaces-gob li {
+    list-style: none;
+}
+
+.enlaces-gob a {
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+
+    white-space: nowrap;
+}
+
+.enlaces-gob a:hover {
+    text-decoration: underline;
+}
+
+
+.menu-navegacion a {
+    display: block;
+    padding: 1% 2%;
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    transition: background-color 0.2s ease;
+}
+
+/* CARRUSEL */
+
+.slider {
+    width: 90%;
+    max-width: 100%;
+    height: 450px;
+    margin: 40px auto;
+
+    position: relative;
+    overflow: hidden;
+
+    background-color: #e5e5e5;
+    border-radius: 10px;
+}
+
+.slider-lista {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 5s ease;
+}
+
+.slide.activo {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* IMÁGENES COMPLETAS */
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* BOTONES */
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 22px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.anterior {
+    left: 15px;
+}
+
+.siguiente {
+    right: 15px;
+}
+
+/* INDICADORES */
+
+.indicadores {
+    position: absolute;
+    bottom: 15px;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    z-index: 10;
+}
+
+.indicador {
+    width: 12px;
+    height: 12px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.indicador.activo {
+    background-color: rgb(175, 145, 88);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .slider {
+        width: 95%;
+        height: 300px;
+    }
+
+    .menu-navegacion {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .menu-navegacion a {
+        font-size: 75%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .slider {
+        height: 220px;
+    }
+
+    .slider-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+}
+
+.SitI{
+
+    margin: 5%;
+    padding: 1%;
+    border-radius: 50px;
+    background: rgb(175, 145, 88, 0.7);
+    align-items: center;
+    text-align: center;
+
+}
+
+.SitI h1{
+
+    color: rgb( 0, 0, 0, 0.6);
+
+}
+
+.SitI-but{
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:50px;
+    flex-wrap:wrap;
+
+}
+
+.card{
+    background:rgb(217, 217, 217);
+    width:180px;
+    height:130px;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color: rgb( 0, 0, 0, 0.6);
+    font-weight:bold;
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.icono-circulo{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:10px;
+    overflow:hidden;
+    border: 3px solid rgb( 175, 145, 88);
+}
+
+.icono-circulo img{
+
+    width: 40px !important;
+    height: 40px !important;
+    object-fit: contain;
+
+}
