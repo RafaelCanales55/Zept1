@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     try {
 
-        const respuesta = await fetch("./public/components/Menu.html");
+        const respuesta = await fetch("./public/Components/Menu.html");
 
         if (!respuesta.ok) {
             throw new Error("No se pudo cargar el menú");
